@@ -4,9 +4,9 @@ class Solution:
         n = len(nums)
 
         for i in range(n):
-            complement = target - nums[i]
+            x = target - nums[i]
             if complement in numMap:
-                return [numMap[complement], i]
+                return [numMap[x], i]
             numMap[nums[i]] = i
 
         return [] 
